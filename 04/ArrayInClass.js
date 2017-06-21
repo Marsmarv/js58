@@ -22,7 +22,7 @@ console.log(sequence[0])
 var nextNumber2 = 0
 sequence = [1, 2]
 i = 1
-while(nextNumber2 < 30) {
+while(nextNumber2 < 4000000) {
 	nextNumber2 = sequence[i] + sequence[i - 1];
 
 	console.log("The value of i is", i)
@@ -35,7 +35,7 @@ while(nextNumber2 < 30) {
 	sequence.push(nextNumber2);
 	i++
 }
-console.log(nextNumber)
+// console.log(nextNumber)
 console.log(nextNumber2)
 
 
