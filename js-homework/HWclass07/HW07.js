@@ -3,9 +3,9 @@ $ (function() {
 	var $button = $('go')
 
 	$button.on('click', function(e){
-	e.preventDefault()
+	// e.preventDefault()
 
-	var 
+	var  
 
 		for(var i = 0; i < 100; i++) {
 		  var v = "";

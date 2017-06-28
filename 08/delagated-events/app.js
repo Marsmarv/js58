@@ -12,7 +12,9 @@ $(function(){
   $favList.on('click', 'li a', function(e){
     console.log(e.pageX, e.pageY);
     $(this).removeClass('hover');
-    $(this).parent().siblings().remove();
+    // $(this).parent().siblings().remove();
+  	
+
   })
 
   var $elem = $('<li><a href="#">Hurfdurf</a></li>');

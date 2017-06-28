@@ -29,7 +29,6 @@ _500px.init({
 			_500px.api('/photos/search', searchOptions, function(resp) {
 				$('.image-results-view').show()
 
-				console.log([i])
 				var photos = resp.data.photos;
 				for(var i = 0; i < photos.length; i++) {
 					var newImg =  $('<img>').attr('src', photos[i].image_url).addClass('image');

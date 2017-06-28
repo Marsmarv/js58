@@ -45,34 +45,27 @@ console.log(result1)
 function oddPosition(oddNumb) {
 	for (var i = 0; i < oddNumb.length; i++)
 		if (oddNumb[i] % 2 != 0) {
-			console.log("is odd " + oddNumb[i])
+			console.log("is odd " + oddNumb[i])		
 		} 
 }
 var result2 = oddPosition(numberList)
-console.log(result2)
 
 // 4
-
+	var numberList = [ 1, 5, 2, 20, 7, 90, 3 ]
+var nextNumb = 0
 
 function sumOfAll() {
-	var nextNumb = 0
-	var i = 1
-
-	while (nextNumb < 1000) {
-		nextNumb += numberList[i] + numberList[i - 1];
-
-		console.log(nextNumb)
-
-		numberList.push(nextNumb);
-		i++
+	for (var i = 0; i < numberList.length; i++) {
+		nextNumb += numberList[i]
 	}
+		return nextNumb
 }
-console.log(sumOfAll(nextNumb))
+	sumOfAll() 
+console.log(sumOfAll())
 
+// 
 
-
-// var lastLetter = word.length - 1;
-// var reversedWord = lastLetter
+// var reversedWord =  word.length - 1
 
 
 // var word = ''
@@ -81,7 +74,7 @@ console.log(sumOfAll(nextNumb))
 // 	if (i = 0; i < word.length; i++)
 // 		if (word[i] == reversedWord[i] -= 1)
 
-// 	}
+// }
 
 
 
