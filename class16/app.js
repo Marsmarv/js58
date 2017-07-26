@@ -35,10 +35,9 @@ $(function() {
 		})
 	})
 
-// add an event listener
+// add an event listener 
 	$('#list-items').on('click', 'li a', function(){
 		var itemId = $(this).parent().data('id')
-		console.log(itemId)
 		database.ref("/todo-items/" + itemId).remove()
 	})
 })
